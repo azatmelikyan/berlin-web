@@ -7,11 +7,11 @@
   --primary-color:                #ff5500;
   --secondary-color:              #f1c522;
   --section-bg-color:             #f9f9f9;
-  --custom-btn-bg-color:          #cb7575;
+  --warning-msg-color:          #f13636;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
-  --icon-color:                   #28856b;
+  --secondary-green-color:        #28856b; /* icon color and Hi text color*/
 
   --body-font-family:             'Source Sans Pro', sans-serif;
   --title-font-family:            'Amatic SC', cursive;
@@ -133,7 +133,7 @@ strong {
 }
 
 .custom-icon {
-  color: var(--icon-color);
+  color: var(--secondary-green-color);
 }
 
 .section-bg {
@@ -245,7 +245,7 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border: 0;
   color: var(--white-color);
   font-family: var(--title-font-family);
@@ -259,7 +259,7 @@ strong {
 
 .custom-btn::after {
   content: "";
-  background: var(--icon-color);
+  background: var(--secondary-green-color);
   border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
   position: absolute;
   top: 0;
@@ -331,7 +331,7 @@ strong {
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: var(--custom-btn-bg-color);
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -417,7 +417,7 @@ strong {
 }
 
 .hero-container h2 {
-  color: var(--custom-btn-bg-color);
+  color: var(--secondary-green-color);
 }
 
 
@@ -434,7 +434,7 @@ strong {
 }
 
 .save-the-date-title {
-  background: var(--primary-color);
+  background: var(--warning-msg-color);
   color: var(--white-color);
   margin-bottom: 0;
   padding: 10px 20px;
@@ -624,7 +624,7 @@ strong {
 
 .custom-form button[type="submit"]::after {
   content: "";
-  background: var(--icon-color);
+  background: var(--secondary-green-color);
   border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
   position: absolute;
   top: 0;
