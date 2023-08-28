@@ -1,0 +1,29 @@
+{
+    "en": {
+        "menu-home": "Home Page",
+        "menu-my-story": "My Story",
+        "menu-my-town": "My Town",
+        "menu-people": "People",
+        "menu-gallery": "Gallery",
+        "menu-contacts": "Contacts",
+        "say-hi": "👋 Hi there, My name is Berlin"
+    },
+    "ru": {
+        "menu-home": "Главный",
+        "menu-my-story": "Моя история",
+        "menu-my-town": "Мой город",
+        "menu-people": "Люди",
+        "menu-gallery": "Галерея",
+        "menu-contacts": "Контакты",
+        "say-hi": "👋 Здарова приятель, меня завут Берлин"
+    },
+    "hy": {
+        "menu-home": "Գլխավուր",
+        "menu-my-story": "Իմ պատմությունը",
+        "menu-my-town": "Իմ բակը",
+        "menu-people": "Մարդիք",
+        "menu-gallery": "Գալերիա",
+        "menu-contacts": "Կոնտակտ",
+        "say-hi": "👋 Բարև Ձեզ, իմ անունը Բեռլին է"
+    }
+}

@@ -7,7 +7,7 @@
   --primary-color:                #ff5500;
   --secondary-color:              #f1c522;
   --section-bg-color:             #f9f9f9;
-  --warning-msg-color:          #f13636;
+  --warning-msg-color:            #f13636;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
@@ -885,4 +885,22 @@ strong {
   .hero-container {
     padding: 30px;
   }
+}
+
+#languageSelector {
+  display: flex;
+  align-items: center;
+}
+
+.languageOption {
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.languageOption.selected {
+  background-color: #e5fbf5;
+  border-color: #ff5500;
 }
