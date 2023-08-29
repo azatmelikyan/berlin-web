@@ -14,6 +14,8 @@ const languageOptions = document.querySelectorAll('.languageOption');
 
             // Call your language update function with the selected language
             applyLanguage(selectedLanguage);
+            localStorage.setItem('selectedLanguage', selectedLanguage);
+
         });
     });
 
@@ -50,3 +52,20 @@ const languageOptions = document.querySelectorAll('.languageOption');
             }
         });
     }
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            // Update language selectors to unselect previously selected language, if any.
+            languageOptions.forEach(opt => opt.classList.remove('selected'));
+            // Update language selector to show the saved language as selected
+            const savedLanguageOption = document.querySelector(`[data-lang="${savedLanguage}"]`);
+            if (savedLanguageOption) {
+                savedLanguageOption.classList.add('selected');
+            }
+    
+            // Call updateContent with the saved language
+            applyLanguage(savedLanguage);
+        }
+    });
