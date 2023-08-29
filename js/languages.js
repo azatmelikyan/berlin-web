@@ -37,8 +37,16 @@ const languageOptions = document.querySelectorAll('.languageOption');
     function updateContent(data) {
         Object.keys(data).forEach(key => {
             const element = document.getElementById(key);
+            // if (element) {
+            //     element.textContent = data[key];
+            // }
+
             if (element) {
-                element.textContent = data[key];
+                const existingI = element.querySelector('.me-1'); // Get the existing <i> element
+                element.textContent = data[key]; // Update the text content
+                if (existingI) {
+                    element.insertAdjacentHTML('afterbegin', existingI.outerHTML); // Re-insert the <i> element
+                }
             }
         });
     }
