@@ -409,6 +409,8 @@ strong {
   background-image: url('../images/berlin.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 100px;
+  background-position-x: 100px;
   border-radius: var(--border-radius-small);
   position: relative;
   overflow: hidden;
@@ -715,8 +717,9 @@ strong {
 -----------------------------------------*/
 @media screen and (max-width: 1200px) {
   .hero-container {
-    background-size: contain;
-    background-position: bottom;
+    background-size: cover;
+    background-position-y: 150px;
+    background-position-x: center;
   }
 }
 
