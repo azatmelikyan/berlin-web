@@ -411,11 +411,13 @@ strong {
   background-size: cover;
   background-position-y: 100px;
   background-position-x: 100px;
+  /* background-position: bottom right; */
   border-radius: var(--border-radius-small);
   position: relative;
   overflow: hidden;
   padding: 50px;
   height: calc(90vh - 98px);
+  max-height: 900px;
 }
 
 .hero-container h2 {
